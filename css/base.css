@@ -1,0 +1,35 @@
+:root {
+  --color-bg: #0a0a0c;
+  --color-text: #f4f1ea;
+  --color-text-dim: #c8c2b6;
+  --color-text-faint: #7c766b;
+  --color-accent: #4fd67a;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-sans: 'Inter', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
