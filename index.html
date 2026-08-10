@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;800&family=Dancing+Script:wght@700&family=Press+Start+2P&family=Meow+Script&family=Mountains+of+Christmas:wght@700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/sections/hero.css">
+  <link rel="stylesheet" href="css/sections/ship.css">
 </head>
 <body>
 
@@ -128,6 +129,57 @@
       <span class="hero__scroll-track"><span class="hero__scroll-dot"></span></span>
     </div>
 
+  </section>
+
+  <section class="ship" id="ship" data-ship data-screen-label="Ship Interlude">
+    <div class="ship__scroll-space">
+      <div class="ship__sticky">
+        <div class="ship__scene" data-ship-scene>
+          <div class="ship__stage">
+            <svg class="ship__svg" viewBox="0 0 860 200" width="100%" height="260" preserveAspectRatio="none">
+              <g transform="translate(70, 30)">
+                <path class="ship__dock" style="stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; opacity: 0.6;" d="M8 108 L8 40 M8 40 L40 40 M8 50 L20 40"></path>
+                <path class="ship__dock" style="stroke-width: 1.4; stroke-linecap: round; opacity: 0.5;" d="M36 40 L36 58"></path>
+                <rect class="ship__dock" style="stroke-width: 1.4; opacity: 0.55;" x="52" y="94" width="18" height="14" rx="1.5"></rect>
+                <path class="ship__dock" style="stroke-width: 1.2; opacity: 0.45;" d="M52 100 L70 100"></path>
+                <path class="ship__dock" style="stroke-width: 2.4; stroke-linecap: round;" d="M0 108 L220 108"></path>
+                <path class="ship__dock" style="stroke-width: 1; stroke-linecap: round; opacity: 0.55;" d="M18 108 L18 128 M46 108 L46 128 M74 108 L74 128 M102 108 L102 128 M130 108 L130 128 M158 108 L158 128 M186 108 L186 128 M214 108 L214 128"></path>
+                <path class="ship__dock" style="stroke-width: 2; stroke-linecap: round;" d="M8 108 L8 138 M46 108 L46 138 M150 108 L150 138 M188 108 L188 138"></path>
+                <path class="ship__dock" style="stroke-width: 1.3; opacity: 0.5;" d="M8 122 L46 116 M150 116 L188 122"></path>
+                <path class="ship__dock" style="stroke-width: 1; stroke-linecap: round; opacity: 0.3;" d="M0 104 L220 104"></path>
+
+                <text class="ship__label" x="8" y="182" text-anchor="start">DESIGN</text>
+                <text class="ship__label" x="690" y="182" text-anchor="middle">SHIP</text>
+
+                <clipPath id="shipWaterClip"><rect x="220" y="82" width="500" height="90"></rect></clipPath>
+                <g clip-path="url(#shipWaterClip)">
+                  <path class="ship__water" d="M220 108 Q 255 121 290 108 Q 325 121 360 108 Q 395 121 430 108 Q 465 121 500 108 Q 535 121 570 108 Q 605 121 640 108 Q 675 121 710 108 Q 745 121 780 108 Q 815 121 850 108 Q 885 121 920 108 Q 955 121 990 108"></path>
+                </g>
+
+                <g class="ship__vessel" data-ship-vessel>
+                  <g class="ship__vessel-scale">
+                    <g class="ship__vessel-drift" data-ship-drift>
+                      <g class="ship__vessel-bob" data-ship-bob>
+                        <g class="ship__vessel-lines">
+                          <path class="ship__line ship__line--hull" style="--dash: 300;" d="M20 100 Q 15 95 22 91 Q 60 85 100 86 Q 140 87 165 93 Q 150 106 120 111 Q 70 116 35 110 Q 22 106 20 100 Z"></path>
+                          <path class="ship__line ship__line--deck" style="--dash: 115;" d="M40 96 Q 70 91 100 92 Q 130 93 152 97"></path>
+                          <path class="ship__line ship__line--keel" style="--dash: 120;" d="M30 107 Q 70 112 120 110 Q 138 109 148 104"></path>
+                          <path class="ship__line ship__line--mast" style="--dash: 97;" d="M95 -14 L99 82"></path>
+                          <path class="ship__line ship__line--jib" style="--dash: 180;" d="M95 -14 L58 80 L99 82 Z"></path>
+                          <path class="ship__line ship__line--main" style="--dash: 175;" d="M95 -14 L128 78 L99 82 Z"></path>
+                          <path class="ship__line ship__line--batten" style="--dash: 60;" d="M108 20 Q 112 50 105 76"></path>
+                          <path class="ship__line ship__line--porthole" style="--dash: 18;" d="M30 100 L30 90 Q 30 87 33 88"></path>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <script type="module" src="js/main.js"></script>
