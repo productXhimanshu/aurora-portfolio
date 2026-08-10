@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hotel Map — Case Study | Himanshu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/pages/case-study.css">
+</head>
+<body class="cs-page">
+
+  <header class="cs-intro">
+    <div class="cs-intro__inner">
+      <a href="index.html" class="cs-back">&larr; Back to work</a>
+      <p class="cs-eyebrow">Case Study — Fintech / Travel</p>
+      <h1 class="cs-title">How I designed a map feature for a hotel booking app that lifted conversion by 8%</h1>
+      <p class="cs-lede">Comparing hotels by price and proximity in a list view was slow and frustrating. Redesigning it as a map-first experience changed that.</p>
+      <div class="cs-metrics">
+        <div>
+          <div class="cs-metric__value">8%</div>
+          <div class="cs-metric__label">Conversion lift</div>
+        </div>
+        <div>
+          <div class="cs-metric__value">35%</div>
+          <div class="cs-metric__label">Engagement increase</div>
+        </div>
+        <div>
+          <div class="cs-metric__value">-15%</div>
+          <div class="cs-metric__label">Bounce rate</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="cs-body">
+    <div class="cs-body__inner">
+
+      <div class="cs-hero cs-hero--tucked cs-photo__img--placeholder" style="aspect-ratio: 16 / 9;">
+        <span class="cs-photo__placeholder-text">Hero product shot</span>
+      </div>
+
+      <section class="cs-section">
+        <p class="cs-section__label">The Context</p>
+        <h2 class="cs-section__title">A list view that made comparison nearly impossible</h2>
+        <p class="cs-section__para">Picture booking a hotel near a stadium in a traffic-heavy city, the night before a big event. Dozens of options show up in a list — prices, ratings, amenities — but no clear sense of how far each one actually is from where you need to be.</p>
+        <p class="cs-section__para">After several failed attempts to compare price against distance, most people gave up on the app entirely and searched Google instead.</p>
+      </section>
+
+      <section class="cs-section">
+        <p class="cs-section__label">The Problem</p>
+        <h2 class="cs-section__title">Users couldn't compare price and proximity at the same time</h2>
+        <p class="cs-section__para">The list view forced a tradeoff: see prices, or estimate distance — never both clearly. That friction was costing bookings.</p>
+        <div class="cs-stats">
+          <div class="cs-stat"><div class="cs-stat__text">30% of users abandon the app before completing a hotel booking near a landmark.</div></div>
+          <div class="cs-stat"><div class="cs-stat__text">List-view bookings near landmarks convert at 15%, versus a 25% industry average.</div></div>
+          <div class="cs-stat"><div class="cs-stat__text">Users spend an average of 20 minutes comparing hotels near a specific location.</div></div>
+        </div>
+        <div class="cs-photos">
+          <div>
+            <img class="cs-photo__img" style="aspect-ratio: 2780 / 669;" src="assets/case-studies/hotel-map/current-flow.webp" alt="The current user flow — where users get stuck">
+            <p class="cs-photo__caption">The current user flow — where users get stuck</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cs-section">
+        <p class="cs-section__label">User Stories</p>
+        <h2 class="cs-section__title">What the redesign needed to support</h2>
+        <ol class="cs-list">
+          <li>Search hotels near a landmark</li>
+          <li>Compare which hotel is nearest to it</li>
+          <li>Check and compare prices of nearby hotels</li>
+          <li>Apply filters on the hotel list</li>
+          <li>Book the hotel of choice</li>
+        </ol>
+        <div class="cs-photos">
+          <div>
+            <img class="cs-photo__img" style="aspect-ratio: 2780 / 669;" src="assets/case-studies/hotel-map/suggested-flow.webp" alt="The suggested user flow after redesign">
+            <p class="cs-photo__caption">The suggested user flow after redesign</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cs-section">
+        <p class="cs-section__label">Competitive Analysis</p>
+        <h2 class="cs-section__title">Learning from Airbnb and MakeMyTrip</h2>
+        <p class="cs-section__para">I audited the map-view experiences of two category leaders — Airbnb and MakeMyTrip — across UI, usability, functionality, and differentiation to identify what a strong map-first booking flow needed to get right.</p>
+        <div class="cs-photos">
+          <div>
+            <div class="cs-photo__img cs-photo__img--placeholder" style="aspect-ratio: 2780 / 1061;"><span class="cs-photo__placeholder-text">Insights from Airbnb</span></div>
+            <p class="cs-photo__caption">Insights from Airbnb</p>
+          </div>
+          <div>
+            <div class="cs-photo__img cs-photo__img--placeholder" style="aspect-ratio: 2780 / 1061;"><span class="cs-photo__placeholder-text">Insights from MakeMyTrip</span></div>
+            <p class="cs-photo__caption">Insights from MakeMyTrip</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cs-section">
+        <p class="cs-section__label">Jobs To Be Done</p>
+        <h2 class="cs-section__title">Three problems the design had to solve</h2>
+        <ol class="cs-list">
+          <li>Help users discover the map view feature</li>
+          <li>Design an intuitive map with on-map filters and search</li>
+          <li>Design hotel cards with limited, relevant info for fast decisions</li>
+        </ol>
+      </section>
+
+      <section class="cs-section">
+        <p class="cs-section__label">Wireframes &amp; Mockups</p>
+        <h2 class="cs-section__title">From paper sketches to polished screens</h2>
+        <p class="cs-section__para">Wireframes let us validate the flow early and cheaply, before investing in visual design. Once the structure felt right, we layered in colour, typography, and brand details to bring the screens to life.</p>
+        <p class="cs-section__para">The final designs were turned into interactive prototypes and tested with real users — their feedback shaped the polish that shipped to production.</p>
+        <div class="cs-photos">
+          <div>
+            <div class="cs-photo__img cs-photo__img--placeholder" style="aspect-ratio: 600 / 420;"><span class="cs-photo__placeholder-text">Paper wireframes</span></div>
+            <p class="cs-photo__caption">Paper wireframes</p>
+          </div>
+          <div>
+            <div class="cs-photo__img cs-photo__img--placeholder" style="aspect-ratio: 2780 / 1486;"><span class="cs-photo__placeholder-text">Polished mockups with annotations</span></div>
+            <p class="cs-photo__caption">Polished mockups with annotations</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="cs-callout">
+        <p class="cs-callout__label">What we noticed</p>
+        <p class="cs-callout__text">After launch, user engagement rose <strong>35%</strong> as people spent more time exploring the map. Booking conversion lifted <strong>8%</strong>, and bounce rate dropped <strong>15%</strong> — users found what they needed faster.</p>
+      </div>
+
+      <div class="cs-photo__img cs-closer cs-photo__img--placeholder" style="aspect-ratio: 4 / 3;"><span class="cs-photo__placeholder-text">Yup!</span></div>
+
+      <a href="index.html" class="cs-back-bottom">&larr; Back to all case studies</a>
+
+    </div>
+  </main>
+
+</body>
+</html>

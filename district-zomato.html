@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>District by Zomato — Case Study | Himanshu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/pages/case-study.css">
+</head>
+<body class="cs-page">
+
+  <header class="cs-intro">
+    <div class="cs-intro__inner">
+      <a href="index.html" class="cs-back">&larr; Back to work</a>
+      <p class="cs-eyebrow">Case Study — District by Zomato / Live Events</p>
+      <h1 class="cs-title">Designing a personalised, social-first event discovery experience</h1>
+      <p class="cs-lede" style="max-width: 640px; margin-bottom: 40px;">Users juggle three or four apps to discover, book, and show up to a live event. I set out to collapse that into a single, personalised, socially-aware flow inside District — and prove which moment in the journey would move bookings the most.</p>
+      <div class="cs-meta">
+        <div><div class="cs-meta__label">Project</div><div class="cs-meta__value">District by Zomato — Live Events</div></div>
+        <div><div class="cs-meta__label">Type</div><div class="cs-meta__value">Self-directed, end-to-end (9-week program)</div></div>
+        <div><div class="cs-meta__label">Role</div><div class="cs-meta__value">Product Designer &amp; PM</div></div>
+        <div><div class="cs-meta__label">Timeline</div><div class="cs-meta__value">9 weeks</div></div>
+        <div><div class="cs-meta__label">Tools</div><div class="cs-meta__value">Figma, competitive research toolkit</div></div>
+      </div>
+      <div class="cs-focus">
+        <p class="cs-focus__label">Focus metric</p>
+        <p class="cs-focus__value">Increase the frequency of orders in live-event bookings.</p>
+      </div>
+    </div>
+    <div class="cs-hero cs-hero--flush cs-photo__img--placeholder" style="aspect-ratio: 1680 / 960;">
+      <span class="cs-photo__placeholder-text">District by Zomato — hero</span>
+    </div>
+  </header>
+
+  <main class="cs-body">
+    <div class="cs-body__inner cs-body__inner--zomato">
+
+      <section class="cs-section">
+        <p class="cs-section__label">The Problem</p>
+        <h2 class="cs-section__title">Booking a live event takes three or four apps</h2>
+        <p class="cs-section__para">Business goal: increase the frequency of orders in live-event bookings on District by Zomato by making discovery and booking dramatically better for the people most likely to book often.</p>
+        <p class="cs-section__para">User problem: live entertainment is growing fast, but the path from "I'd like to do something this weekend" to "I've booked it" is fragmented. Users bounce between discovery (Instagram, friends), booking (BookMyShow), and on-the-day logistics (maps, food). Every hand-off is a drop-off — and a missed booking.</p>
+        <p class="cs-section__para">Why it matters: District sits inside the Zomato ecosystem, which already owns dining intent and location data — an advantage no ticketing app has. If discovery and booking felt personal and social, District could turn one-off ticket buyers into repeat bookers.</p>
+      </section>
+
+      <section class="cs-section">
+        <p class="cs-section__label">Competitive Research</p>
+        <h2 class="cs-section__title">Benchmarking against BookMyShow</h2>
+        <p class="cs-section__para">I mapped both digital alternatives (BookMyShow, Swiggy Scenes, Meetup, Eventbrite, Nearbuy, Facebook Events) and physical ones (venues running their own nights, community centres, local organisers), then narrowed to the benchmark with the richest public footprint: BookMyShow, the dominant event-ticketing player in India.</p>
+        <p class="cs-section__para">I walked both apps screen by screen and ran teardown tools (Wayback Machine, SimilarWeb, ad libraries, company blogs) to surface what BookMyShow solves that District doesn't.</p>
+        <div class="cs-insight">
+          <p class="cs-insight__label">The insight</p>
+          <p class="cs-insight__text">The biggest lever wasn't features District was missing one-by-one; it was the absence of a personalised discovery experience. That reframed the whole project.</p>
+        </div>
+        <ol class="cs-list">
+          <li>Enhanced event discovery &amp; personalisation — recommendations and quick filters cut the effort of finding relevant events</li>
+          <li>Comprehensive event insights — descriptions, venue info, seating charts, and reviews to decide with confidence</li>
+          <li>Flexible booking &amp; payment — promo codes, cashback, and multiple payment rails for different budgets</li>
+          <li>Post-booking convenience — reminders, calendar sync, cancellation policies that add value beyond the ticket</li>
+        </ol>
+        <div class="cs-photos">
+          <div class="cs-photo-block">
+            <div class="cs-photo__img cs-photo__img--cover cs-photo__img--placeholder" style="aspect-ratio: 16 / 9;"><span class="cs-photo__placeholder-text">Screen-by-screen teardown of BookMyShow against District's events flow</span></div>
+            <p class="cs-photo__caption">Screen-by-screen teardown of BookMyShow against District's events flow</p>
+            <p class="cs-photo-block__explain">Annotated comparison across four moments: personalised recommendations, seating charts, promo/coupon flow, and post-booking.</p>
+          </div>
+          <div class="cs-photo-block">
+            <div class="cs-photo__img cs-photo__img--cover cs-photo__img--placeholder" style="aspect-ratio: 16 / 9;"><span class="cs-photo__placeholder-text">The clearest gap: District lacked a personalised discovery layer</span></div>
+            <p class="cs-photo__caption">The clearest gap: District lacked a personalised discovery layer</p>
+            <p class="cs-photo-block__explain">BookMyShow surfaces "Offers for you," "Top live event offers," and "Live events" as personalised, ranked surfaces — District showed the same list to everyone.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cs-section">
+        <p class="cs-section__label">User Research</p>
+        <h2 class="cs-section__title">8 interviews, one clear pattern</h2>
+        <p class="cs-section__para">I recruited 8 users across genders, age bands (15–45), cities (Bhubaneswar, Delhi, Mumbai, Bangalore, Hyderabad, Kolkata), and levels of event-going experience — deliberately spanning demographics rather than a single archetype.</p>
+        <p class="cs-section__para">I ran semi-structured interviews against a 17-question guide covering leisure habits, how they discover events, who they go with, how they book, and their experience of District specifically. Then I summarised every conversation, grouped it into themes, and quantified the pain.</p>
+        <div class="cs-stats">
+          <div class="cs-stat"><div class="cs-stat__value">62.5%</div><div class="cs-stat__text">felt event information was not enough to decide — missing venue maps, photos, reviews, transparent pricing</div></div>
+          <div class="cs-stat"><div class="cs-stat__value">50%</div><div class="cs-stat__text">felt event options were limited and lacked personalised recommendations</div></div>
+          <div class="cs-stat"><div class="cs-stat__value">37%</div><div class="cs-stat__text">found event discovery itself an issue — couldn't find events matching their interests</div></div>
+          <div class="cs-stat"><div class="cs-stat__value">25%</div><div class="cs-stat__text">felt they weren't getting value for money — wanted discounts and packages</div></div>
+        </div>
+        <div class="cs-photos">
+          <div class="cs-photo-block">
+            <div class="cs-photo__img cs-photo__img--cover cs-photo__img--placeholder" style="aspect-ratio: 1680 / 955;"><span class="cs-photo__placeholder-text">8 participants across cities, ages, and event-going habits</span></div>
+            <p class="cs-photo__caption">8 participants across cities, ages, and event-going habits</p>
+            <p class="cs-photo-block__explain">Recruited deliberately across demographics — name, gender, age, and city — rather than a single archetype, to stress-test whether the pain was universal or niche.</p>
+          </div>
+          <div class="cs-photo-block">
+            <div class="cs-photo__img cs-photo__img--cover cs-photo__img--placeholder" style="aspect-ratio: 2576 / 1449;"><span class="cs-photo__placeholder-text">Four themes, quantified across the sample</span></div>
+            <p class="cs-photo__caption">Four themes, quantified across the sample</p>
+            <p class="cs-photo-block__explain">Every transcript was grouped into four themes — Event Discovery, Event Information, User Engagement, Value for Money — then quantified so the loudest complaint could be checked against the data, not just intuition.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cs-section">
+        <p class="cs-section__label">Synthesis</p>
+        <h2 class="cs-section__title">Pains, gains, and jobs — traced back to the metric</h2>
+        <p class="cs-section__para">I distilled the research into a pains/gains/jobs model and traced each item back to the booking-frequency metric.</p>
+        <div class="cs-insight">
+          <p class="cs-insight__label">The insight</p>
+          <p class="cs-insight__text">Prioritised segment: Young Professionals (22–35, metro cities). A large slice of Zomato's active base, already using it for dining, spending moderately on experiences, going in small groups, deciding on peer recommendations, and responding to personalised, bundled offers — the users most able to increase booking frequency.</p>
+        </div>
+        <div class="cs-table">
+          <div class="cs-table__row"><div class="cs-table__key">Top pains</div><div class="cs-table__value">Limited event options for a location · high prices with no deals · tedious refunds</div></div>
+          <div class="cs-table__row"><div class="cs-table__key">Top gains</div><div class="cs-table__value">Personalised recommendations · exclusive discounts/bundles · early access</div></div>
+          <div class="cs-table__row"><div class="cs-table__key">Top jobs</div><div class="cs-table__value">Discover relevant events · book for a group easily · find bundled dining + event offers</div></div>
+        </div>
+      </section>
+
+      <section class="cs-section">
+        <p class="cs-section__label">Mapping the Opportunity</p>
+        <h2 class="cs-section__title">Seven moments, one bet</h2>
+        <p class="cs-section__para">I built a journey map for the segment across six stages — Awareness → Consideration → Decision → Booking → Event → Post-Event — capturing what the user does and needs at each.</p>
+        <p class="cs-section__para">From the journey I pulled seven distinct moments in time, and for each I wrote the user's top-level "I want…" statement, then broke each into sub-needs. That became an opportunity tree hung off the single business metric.</p>
+        <div class="cs-insight">
+          <p class="cs-insight__label">The insight</p>
+          <p class="cs-insight__text">I prioritised Exploring Event Details. Rationale: it's where users spend the most decision time, where competitors under-invest (they optimise listing, not the detail page), and where Zomato's discovery muscle and dining data give District a real edge. Fix this moment and you directly lift conversion.</p>
+        </div>
+        <ol class="cs-list">
+          <li>Discovering an event — "I want to find exciting events that match my interests"</li>
+          <li>Exploring event details — "I need enough info to decide if this is worth attending"</li>
+          <li>Deciding to book — "I want to be confident before I pay"</li>
+          <li>Completing the booking — "I want an easy, hassle-free booking"</li>
+          <li>Preparing for the event — "I want to plan my visit efficiently"</li>
+          <li>Attending the event — "I want a seamless, enjoyable experience at the venue"</li>
+          <li>Post-event — "I want to share my experience and find more like it"</li>
+        </ol>
+        <div class="cs-photos">
+          <div class="cs-photo-block">
+            <div class="cs-photo__img cs-photo__img--cover cs-photo__img--placeholder" style="aspect-ratio: 2576 / 1449;"><span class="cs-photo__placeholder-text">The young-professional booking journey, end to end</span></div>
+            <p class="cs-photo__caption">The young-professional booking journey, end to end</p>
+            <p class="cs-photo-block__explain">Six stages, mapped with what the user does and needs at each — the backbone the opportunity tree was built from.</p>
+          </div>
+          <div class="cs-photo-block">
+            <div class="cs-photo__img cs-photo__img--cover cs-photo__img--placeholder" style="aspect-ratio: 16 / 9;"><span class="cs-photo__placeholder-text">Seven moments, each with the jobs that could move the metric</span></div>
+            <p class="cs-photo__caption">Seven moments, each with the jobs that could move the metric</p>
+            <p class="cs-photo-block__explain">Rooted in "Increase frequency of orders in live event bookings," branching into all seven journey moments and their sub-needs — the map that led to betting on Exploring Event Details.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cs-section">
+        <p class="cs-section__label">Ideation</p>
+        <h2 class="cs-section__title">Three concepts for Exploring Event Details</h2>
+        <p class="cs-section__para">For the chosen opportunity I generated three solution directions and story-mapped each so the flow was unambiguous.</p>
+        <div class="cs-moves">
+          <div><p class="cs-move__title">Interactive &amp; Personalised Event Details Page</p><p class="cs-move__desc">Auto-generated takeaways ("90% of attendees loved the vibe"), "people like you also booked this," and a "grab a meal before the event" nudge that leans on Zomato's restaurant graph.</p></div>
+          <div><p class="cs-move__title">Social Proof &amp; Real-Time Engagement</p><p class="cs-move__desc">Live reviews and media from the venue, a friends-attending feature, and an event popularity meter ("500+ booked in the last hour").</p></div>
+          <div><p class="cs-move__title">Event Q&amp;A &amp; Community Forum</p><p class="cs-move__desc">User-generated Q&amp;A, moderator-verified answers, and pre-event threads to coordinate meetups and carpools.</p></div>
+        </div>
+        <div class="cs-photos">
+          <div class="cs-photo-block">
+            <div class="cs-photo__img cs-photo__img--cover cs-photo__img--placeholder" style="aspect-ratio: 2576 / 1449;"><span class="cs-photo__placeholder-text">Concept 1 — a personalised, insight-rich detail page</span></div>
+            <p class="cs-photo__caption">Concept 1 — a personalised, insight-rich detail page</p>
+            <p class="cs-photo-block__explain">Story-mapped as a user/platform swim-lane to make the flow from landing to decision unambiguous before any UI was drawn.</p>
+          </div>
+          <div class="cs-photo-block">
+            <div class="cs-photo__img cs-photo__img--cover cs-photo__img--placeholder" style="aspect-ratio: 2576 / 1449;"><span class="cs-photo__placeholder-text">Concept 2 — FOMO, live reviews, friends attending</span></div>
+            <p class="cs-photo__caption">Concept 2 — FOMO, live reviews, friends attending</p>
+            <p class="cs-photo-block__explain">Mapped the moments where real-time social signals — who's going, what people are saying right now — could intercept hesitation.</p>
+          </div>
+          <div class="cs-photo-block">
+            <div class="cs-photo__img cs-photo__img--cover cs-photo__img--placeholder" style="aspect-ratio: 2576 / 1449;"><span class="cs-photo__placeholder-text">Concept 3 — a community layer that answers pre-booking questions</span></div>
+            <p class="cs-photo__caption">Concept 3 — a community layer that answers pre-booking questions</p>
+            <p class="cs-photo-block__explain">Mapped how a Q&amp;A thread could resolve the situational questions a static description never anticipates.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cs-section">
+        <p class="cs-section__label">Narrowing Down</p>
+        <h2 class="cs-section__title">MoSCoW: two Must-Haves, one supporting layer</h2>
+        <p class="cs-section__para">The Interactive Detail Page and the Q&amp;A/Community layer both scored Must-Have — they remove uncertainty at the exact moment users decide, and they reuse District's existing recommendation and filtering logic for a fast rollout. Social proof landed as a strong Should-Have and folded into the winning direction as a supporting layer.</p>
+        <div class="cs-photos">
+          <div class="cs-photo-block">
+            <div class="cs-photo__img cs-photo__img--cover cs-photo__img--placeholder" style="aspect-ratio: 2576 / 1449;"><span class="cs-photo__placeholder-text">Prioritising against user expectation and feasibility</span></div>
+            <p class="cs-photo__caption">Prioritising against user expectation and feasibility</p>
+            <p class="cs-photo-block__explain">Each idea scored against user expectation, business value, and build feasibility — the table that turned three concepts into one shippable direction.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cs-section">
+        <p class="cs-section__label">Wireframing</p>
+        <h2 class="cs-section__title">Breadboard first, then rough screens</h2>
+        <p class="cs-section__para">I breadboarded the winning idea end to end first — mapping every place, affordance, and connection before drawing a single pixel. Then rough wireframes to pressure-test the two hero interactions: the live chat/community layer and the social insights (friends &amp; crowd attending) layer.</p>
+        <div class="cs-photos">
+          <div class="cs-photo-block">
+            <div class="cs-photo__img cs-photo__img--cover cs-photo__img--placeholder" style="aspect-ratio: 2576 / 1449;"><span class="cs-photo__placeholder-text">Breadboarding the flow before committing to UI</span></div>
+            <p class="cs-photo__caption">Breadboarding the flow before committing to UI</p>
+            <p class="cs-photo-block__explain">Covers Homepage, Event Details, Active Engagement, Community Forum, and External Redirection — every place and connection mapped before any visual design.</p>
+          </div>
+          <div class="cs-photo-block">
+            <div class="cs-photo__img cs-photo__img--cover cs-photo__img--placeholder" style="aspect-ratio: 2576 / 1449;"><span class="cs-photo__placeholder-text">Rough wireframes — bringing a live community onto the event page</span></div>
+            <p class="cs-photo__caption">Rough wireframes — bringing a live community onto the event page</p>
+            <p class="cs-photo-block__explain">Grey-box pass on Home Screen (Live Chat entry point) and the expanded Live Chat &amp; Community screen.</p>
+          </div>
+          <div class="cs-photo-block">
+            <div class="cs-photo__img cs-photo__img--cover cs-photo__img--placeholder" style="aspect-ratio: 2576 / 1449;"><span class="cs-photo__placeholder-text">Rough wireframes — friends and locals attending, as social proof</span></div>
+            <p class="cs-photo__caption">Rough wireframes — friends and locals attending, as social proof</p>
+            <p class="cs-photo-block__explain">Grey-box pass on the Home Screen (Insights entry point) and the Insights Detail section.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cs-section">
+        <p class="cs-section__label">The Solution</p>
+        <h2 class="cs-section__title">An interactive, personalised event detail page with a live social layer</h2>
+        <p class="cs-section__para">It leans on AI-driven recommendations, real-time engagement, and Zomato's dining and location data to make the deciding moment effortless and confident.</p>
+        <div class="cs-moves">
+          <div><p class="cs-move__title">Personalised event discovery</p><p class="cs-move__desc">Recommendations from preferences, past bookings, and browsing; segmented into trending, nearby, and exclusive deals.</p></div>
+          <div><p class="cs-move__title">Rich detail page</p><p class="cs-move__desc">Full venue info, reviews and photos, live ratings, and an Event Q&amp;A/community forum.</p></div>
+          <div><p class="cs-move__title">Social proof &amp; engagement</p><p class="cs-move__desc">Friends-attending, a live popularity meter, celebrities attending, and shareable highlights.</p></div>
+          <div><p class="cs-move__title">Seamless booking</p><p class="cs-move__desc">Multiple payment options with card/bank discounts, and an easy refund/cancellation path.</p></div>
+          <div><p class="cs-move__title">Post-event loop</p><p class="cs-move__desc">Feedback capture that feeds the next round of recommendations.</p></div>
+        </div>
+        <div class="cs-photos">
+          <div class="cs-photo-block">
+            <div class="cs-photo__img cs-photo__img--cover cs-photo__img--placeholder" style="aspect-ratio: 2576 / 1449;"><span class="cs-photo__placeholder-text">The event detail page, with a live community reading the room in real time</span></div>
+            <p class="cs-photo__caption">The event detail page, with a live community reading the room in real time</p>
+            <p class="cs-photo-block__explain">The event detail page with a Live Chat pill, expanding into a full thread showing "122 users online" — organisers and attendees answering questions as they come in.</p>
+          </div>
+          <div class="cs-photo-block">
+            <div class="cs-photo__img cs-photo__img--cover cs-photo__img--placeholder" style="aspect-ratio: 2576 / 1449;"><span class="cs-photo__placeholder-text">Who else is going — celebrities, friends, and people near you</span></div>
+            <p class="cs-photo__caption">Who else is going — celebrities, friends, and people near you</p>
+            <p class="cs-photo-block__explain">A celebrities-attending grid alongside a friends-attending list with Connect CTAs — turning peer trust into a visible, actionable signal at the point of decision.</p>
+          </div>
+          <div class="cs-photo-block">
+            <div class="cs-photo__img cs-photo__img--cover cs-photo__img--placeholder" style="aspect-ratio: 2576 / 1449;"><span class="cs-photo__placeholder-text">Landing page — location-aware, personalised, built for discovery</span></div>
+            <p class="cs-photo__caption">Landing page — location-aware, personalised, built for discovery</p>
+            <p class="cs-photo-block__explain">Annotated: location and search up top, personalised rows beneath, popular/most-popular sections, and the booking CTA kept reachable throughout.</p>
+          </div>
+          <div class="cs-photo-block">
+            <div class="cs-photo__img cs-photo__img--cover cs-photo__img--placeholder" style="aspect-ratio: 2576 / 1449;"><span class="cs-photo__placeholder-text">Event detail — everything needed to decide, in one scroll</span></div>
+            <p class="cs-photo__caption">Event detail — everything needed to decide, in one scroll</p>
+            <p class="cs-photo-block__explain">Annotated: share action, hero image, live chat entry, location/time, and celebrities &amp; friends attending — sequenced in the order a user actually decides.</p>
+          </div>
+          <div class="cs-photo-block">
+            <div class="cs-photo__img cs-photo__img--cover cs-photo__img--placeholder" style="aspect-ratio: 2576 / 1449;"><span class="cs-photo__placeholder-text">Live chat — organisers and attendees, answering in real time</span></div>
+            <p class="cs-photo__caption">Live chat — organisers and attendees, answering in real time</p>
+            <p class="cs-photo-block__explain">Annotated: live viewer counter, threaded comments and sub-comments, compose bar, and a media attachment CTA.</p>
+          </div>
+          <div class="cs-photo-block">
+            <div class="cs-photo__img cs-photo__img--cover cs-photo__img--placeholder" style="aspect-ratio: 2576 / 1449;"><span class="cs-photo__placeholder-text">Connect with friends already going — social pull into the booking</span></div>
+            <p class="cs-photo__caption">Connect with friends already going — social pull into the booking</p>
+            <p class="cs-photo-block__explain">Annotated: friend rows with mutual context and a direct Connect CTA to coordinate before booking.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cs-section">
+        <p class="cs-section__label">Rollout &amp; Risk</p>
+        <h2 class="cs-section__title">A phased launch, planned for what could go wrong</h2>
+        <p class="cs-section__para">Phased launch: beta to 5–10% of metro users (Month 1–2) → enhancement and A/B testing at 30–40% (Month 3–4) → full launch with marketing (Month 5) → optimise and expand partnerships (Month 6+).</p>
+        <p class="cs-section__para">Risks planned for: thin event inventory (mitigated with organiser partnerships), payment drop-off (retries, alternative rails, support), and security (encryption, 2FA, monitoring). Edge cases considered: first-time users with no history, payment failures, cancellations, and non-metro/pin-code users.</p>
+      </section>
+
+      <section class="cs-section">
+        <p class="cs-section__label">Measuring Success</p>
+        <h2 class="cs-section__title">Instrumented before it shipped, not after</h2>
+        <p class="cs-section__para">I defined the analytics up front so the feature could prove itself. I specified a full event-tracking spec across three phases — Discovery &amp; Exploration, Social Engagement, and Event Experience — each event with its trigger, event properties, and user properties (e.g. event_viewed, event_filtered, friends_attending_viewed, event_checkin_completed, event_feedback_submitted).</p>
+        <div class="cs-stats">
+          <div class="cs-stat"><div class="cs-stat__value">Success</div><div class="cs-stat__text">Daily active users · average order value · preferences set · wishlists created</div></div>
+          <div class="cs-stat"><div class="cs-stat__value">Failure</div><div class="cs-stat__text">High drop-off · falling engagement · fewer bookings per user despite rollout</div></div>
+        </div>
+      </section>
+
+      <section class="cs-section" style="margin-bottom: 0;">
+        <p class="cs-section__label">What I Took Away</p>
+        <h2 class="cs-section__title">Three things I'd carry into the next project</h2>
+        <ol class="cs-list">
+          <li>The metric is the compass — anchoring every pain, gain, and idea to booking frequency stopped the project sprawling into a feature wishlist</li>
+          <li>Prioritising a moment beats prioritising a feature — betting on "Exploring Event Details" gave the whole solution a spine</li>
+          <li>Use the ecosystem you're in — District's edge was never going to be out-listing BookMyShow; it was dining data, location, and social graph, and the solution leans hard on that</li>
+        </ol>
+      </section>
+
+      <a href="index.html" class="cs-back-bottom cs-back-bottom--zomato">&larr; Back to all case studies</a>
+
+    </div>
+  </main>
+
+</body>
+</html>
