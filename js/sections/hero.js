@@ -292,18 +292,19 @@ function initCubeMorph(hero) {
   cube.addEventListener('blur', stop);
 }
 
-function initGlowButton(hero, boostState) {
-  const btn = hero.querySelector('[data-glow-btn]');
-  if (!btn) return;
-  const label = btn.querySelector('[data-glow-label]');
+function triggerAuroraAfterLoad(boostState) {
+  const trigger = () => {
+    setTimeout(() => {
+      boostState.active = true;
+      boostState.glowStart = performance.now();
+    }, 2000);
+  };
 
-  btn.addEventListener('click', () => {
-    if (boostState.active) return;
-    boostState.active = true;
-    boostState.glowStart = performance.now();
-    btn.classList.add('is-active');
-    if (label) label.textContent = 'Aurora Borealis — Northern Lights';
-  });
+  if (document.readyState === 'complete') {
+    trigger();
+  } else {
+    window.addEventListener('load', trigger, { once: true });
+  }
 }
 
 export function initHero(root = document) {
@@ -322,5 +323,5 @@ export function initHero(root = document) {
   initParallax(hero, bgImg, canvas, textEl);
   initUfos(hero);
   initCubeMorph(hero);
-  initGlowButton(hero, boostState);
+  triggerAuroraAfterLoad(boostState);
 }
