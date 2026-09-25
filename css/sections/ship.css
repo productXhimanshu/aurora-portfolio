@@ -1,7 +1,7 @@
 .ship {
   position: relative;
   width: 100%;
-  background: var(--color-bg);
+  background: transparent;
   color: var(--color-text);
 }
 

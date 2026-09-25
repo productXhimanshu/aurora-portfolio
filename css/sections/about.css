@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: var(--color-bg);
+  background: transparent;
   color: var(--color-text);
   padding: 40px 44px 200px;
   display: flex;

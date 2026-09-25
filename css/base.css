@@ -34,3 +34,18 @@ img {
   max-width: 100%;
   display: block;
 }
+
+.bg-gradient {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.bg-gradient--base {
+  background: linear-gradient(180deg, #070a12 0%, #0b1120 50%, #070a12 100%);
+}
+
+.bg-gradient--glow {
+  background: radial-gradient(120% 70% at 50% 0%, rgba(122, 196, 164, 0.10) 0%, rgba(122, 196, 164, 0) 60%);
+}
