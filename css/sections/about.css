@@ -40,7 +40,9 @@
   opacity: 0;
   transform: translateY(16px) scale(0.97);
   transition: opacity 0.5s ease-out var(--delay, 0s), transform 0.5s ease-out var(--delay, 0s), background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
-  background: rgba(244, 241, 234, 0.025);
+  background: linear-gradient(rgba(244, 241, 234, 0.022), rgba(244, 241, 234, 0.022)), rgba(10, 11, 16, 0.5);
+  backdrop-filter: blur(14px) saturate(120%);
+  -webkit-backdrop-filter: blur(14px) saturate(120%);
   border: 1px solid rgba(244, 241, 234, 0.09);
   border-radius: 18px;
   padding: 26px;
@@ -57,7 +59,7 @@
 
 .about.is-in .about-card:hover {
   transform: translateY(-5px) scale(1);
-  background: rgba(79, 214, 122, 0.05);
+  background: linear-gradient(rgba(79, 214, 122, 0.07), rgba(79, 214, 122, 0.07)), rgba(10, 11, 16, 0.55);
   border-color: rgba(79, 214, 122, 0.5);
   box-shadow: 0 12px 28px -8px rgba(79, 214, 122, 0.25);
 }
