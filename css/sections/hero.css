@@ -157,11 +157,9 @@
   gap: 7px;
 }
 
-.hero__logo-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--color-text);
+.hero__logo-icon {
+  height: 1.5em;
+  width: auto;
   display: inline-block;
 }
 
